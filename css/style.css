@@ -1,0 +1,67 @@
+/* Caroline C */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Assistant:wght@200;300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --bg-color: #f6eef8;
+  --primary-color: #ff96aa;
+  --seconday-color: #7e9af4;
+  --accent-color: #ff6c3c;
+
+  --header-font: "Alegreya", serif;
+  --subheading-font: "Assistant", sans-serif;
+  --p-font: "Quicksand", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: var(--header-font);
+}
+
+h2,
+h3,
+h4,
+h5,
+ul,
+a {
+  font-family: var(--subheading-font);
+  font-weight: 600;
+}
+
+p {
+  font-family: var(--p-font);
+}
+
+main {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1.5rem;
+
+  /* background-image: url(../images/big_pink.svg); 
+  background-size: auto;*/
+}
+
+.productImage {
+  width: 300px;
+  margin: auto;
+  border: #020c2d 1px solid;
+  border-radius: 4px;
+}
+
+ul.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+.butterAndOil {
+  display: flex;
+  flex-direction: column;
+}
