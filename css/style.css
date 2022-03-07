@@ -130,4 +130,9 @@ ul.breadcrumbs {
   h4 {
     font-size: 1.2rem;
   }
+
+  .productPage {
+    padding: 6rem;
+    gap: 6rem;
+  }
 }
