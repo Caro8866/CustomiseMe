@@ -4,6 +4,7 @@
   --primary-color: #ff96aa;
   --seconday-color: #7e9af4;
   --accent-color: #ff6c3c;
+  --darker-color: #020c2d;
 
   --header-font: "Suez-One", serif;
   --subheading-font: "Assistant", sans-serif;
@@ -70,6 +71,7 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
   aspect-ratio: 1/1;
@@ -77,7 +79,10 @@ header nav ul {
   height: 4rem;
   margin: 0;
 }
-
+.fa-shopping-cart {
+  font-size: 1.5rem;
+  color: var(--darker-color);
+}
 /* product page */
 
 .productImage {
@@ -162,7 +167,7 @@ footer {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 1.2rem;
+  gap: 3rem;
   padding: 1rem;
 }
 
