@@ -2,8 +2,9 @@
 :root {
   --bg-color: #f6eef8;
   --primary-color: #ff96aa;
-  --seconday-color: #7e9af4;
+  --secondary-color: #7e9af4;
   --accent-color: #ff6c3c;
+  --darker-accent: #d4592f;
   --darker-color: #020c2d;
 
   --header-font: "Suez-One", serif;
@@ -36,6 +37,19 @@ a {
   font-weight: 600;
 }
 
+a:link {
+  color: var(--darker-color);
+}
+a:visited {
+  color: var(--darker-color);
+}
+a:hover {
+  color: var(--darker-accent);
+}
+a:active {
+  color: var(--darker-color);
+}
+
 p {
   font-family: var(--p-font);
 }
@@ -55,7 +69,7 @@ header {
   background-image: linear-gradient(
     to right,
     var(--primary-color),
-    var(--seconday-color),
+    var(--secondary-color),
     var(--primary-color)
   );
   padding: 1.5rem;
@@ -111,7 +125,7 @@ ul.breadcrumbs {
   font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
-  background-color: var(--seconday-color);
+  background-color: var(--secondary-color);
   border-radius: 30px;
   padding: 1rem 2.5rem;
   display: block;
@@ -140,9 +154,12 @@ footer {
   background-image: linear-gradient(
     to right,
     var(--primary-color),
-    var(--seconday-color),
+    var(--secondary-color),
     var(--accent-color)
   );
+}
+footer a {
+  font-family: var(--p-font);
 }
 
 .learn,
