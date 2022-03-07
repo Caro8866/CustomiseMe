@@ -36,13 +36,11 @@ p {
 
 main {
   background-color: var(--bg-color);
+  /*background-image: url(../images/texture4.svg);*/
   display: flex;
   flex-direction: column;
   padding: 1rem;
   gap: 1.5rem;
-
-  /* background-image: url(../images/big_pink.svg); 
-  background-size: auto;*/
 }
 
 .productImage {
@@ -88,18 +86,29 @@ ul.breadcrumbs {
 }
 
 @media only screen and (min-width: 480px) {
-  main {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr;
-  }
-
   .breadcrumbs {
     grid-column: 1/-1;
+  }
+
+  .productPage {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    padding: 3rem;
+    gap: 3rem;
   }
 
   .productPage .productInfo {
     position: sticky;
     top: 0;
-    padding: 0 2rem;
+  }
+
+  .productPage .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .productPage button {
+    margin: 0;
+    padding: 1rem 1rem;
   }
 }
