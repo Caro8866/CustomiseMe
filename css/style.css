@@ -36,7 +36,7 @@ p {
 
 main {
   background-color: var(--bg-color);
-  background-image: url(../images/light_texture2.svg);
+  background-image: url(../images/pink_repeat.svg);
   background-blend-mode: hard-light;
   display: flex;
   flex-direction: column;
@@ -118,7 +118,7 @@ ul.breadcrumbs {
   }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1200px) {
   h2 {
     font-size: 3rem;
   }
