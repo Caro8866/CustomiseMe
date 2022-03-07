@@ -36,7 +36,8 @@ p {
 
 main {
   background-color: var(--bg-color);
-  /*background-image: url(../images/texture4.svg);*/
+  background-image: url(/images/light_texture.svg);
+  background-blend-mode: hard-light;
   display: flex;
   flex-direction: column;
   padding: 1rem;
