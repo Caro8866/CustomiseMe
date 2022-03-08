@@ -220,7 +220,8 @@ label > img {
 /* IMAGE STYLES */
 [type="radio"] + img {
   cursor: pointer;
-  opacity: 50%;
+  opacity: 65%;
+  width: 30%;
 }
 
 /* CHECKED STYLES */
