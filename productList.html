@@ -8,7 +8,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Customise Me |Products</title>
+    <title>Customise Me | Products</title>
     <link rel="stylesheet" href="css/style.css" />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
   </head>
@@ -39,13 +39,26 @@
           here you'll find our selection of organic sustainably produced soap.
         </p>
         <p>
-          DOnt see what your looking for? Why dont you
+          Don't see what your looking for? Why not
           <a href="">create your own?</a>
         </p>
         <a href="customise.html">Click here to create your own soap - </a>
       </header>
 
-      <article class="productCard">
+      <template id="productList-template">
+        <article class="productCard">
+          <div class="bgBlob">
+            <img src="" alt="" />
+            <h3 class="productName">SOAP NAME</h3>
+            <p class="essential-oil-1"></p>
+            <p class="essential-oil-2"></p>
+            <p class="price"></p>
+            <a class="productButton" href=""><button>See details</button></a>
+          </div>
+        </article>
+      </template>
+
+      <!-- <article class="productCard">
         <div class="bgBlob">
           <img src="" alt="" />
           <h3>SOAP NAME</h3>
@@ -83,17 +96,7 @@
           <p class="price">55kr</p>
           <button>ADD TO CART</button>
         </div>
-      </article>
-
-      <article class="productCard">
-        <div class="bgBlob">
-          <img src="" alt="" />
-          <h3>SOAP NAME</h3>
-          <p>MAIN INGREDIENTS</p>
-          <p class="price">55kr</p>
-          <button>ADD TO CART</button>
-        </div>
-      </article>
+      </article> -->
 
       <div class="pageNavigation">
         <a href="">1</a>
@@ -142,6 +145,6 @@
         </ul>
       </nav>
     </footer>
-    <script src="main.js"></script>
+    <script src="productList.js"></script>
   </body>
 </html>
