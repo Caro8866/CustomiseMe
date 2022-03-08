@@ -8,8 +8,8 @@
   --darker-color: #020c2d;
 
   --header-font: "Suez-One", serif;
-  --subheading-font: "Assistant", sans-serif;
-  --p-font: "Quicksand", sans-serif;
+  --subheading-font: "Quicksand", sans-serif;
+  --p-font: "Assistant", sans-serif;
 }
 html {
   background-color: var(--bg-color);
@@ -160,7 +160,8 @@ ul.breadcrumbs {
 main.productList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 3rem 0 8rem 0;
+  padding: 3rem 1rem 8rem 1rem;
+  gap: 1rem;
 }
 
 .productList .listIntro {
@@ -176,11 +177,23 @@ main.productList {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 2rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
+  background-image: url(../images/product_blob.svg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 }
 
 .productList img {
   width: 100%;
+}
+
+.productCard img {
+  width: 70%;
+  margin: auto;
+}
+
+.productCard .cardText {
+  margin: auto;
 }
 
 .productList button {
@@ -271,17 +284,21 @@ footer a {
   }
 }
 
-/* when the screen is bigger than mobile view */
+/* when the screen is bigger than mobile view (tablet) */
 @media only screen and (min-width: 480px) {
   .breadcrumbs {
     grid-column: 1/-1;
   }
 
-  .productPage {
+  main.productPage {
     display: grid;
     grid-template-columns: 1.6fr 1fr;
     padding: 3rem;
     gap: 3rem;
+  }
+
+  main.productList {
+    gap: 6rem;
   }
 
   .productPage .productInfo {
@@ -292,6 +309,35 @@ footer a {
   .productPage button {
     margin: 0;
     padding: 1rem 1rem;
+  }
+
+  .productList .productCard {
+    margin: 0 0 4rem 0;
+  }
+
+  .productList h2 {
+    font-size: 2rem;
+  }
+}
+
+/* when the screen is normal laptop */
+
+@media only screen and (min-width: 800px) {
+  main.productList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productList h2 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .productList p {
+    font-size: 1.2rem;
+  }
+  main.productList {
+    gap: 6rem;
+    padding: 0 4rem 4rem;
   }
 }
 
