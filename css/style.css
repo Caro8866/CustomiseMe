@@ -227,6 +227,7 @@ footer {
   background-position: inherit;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  height: 55vh;
 
   /* background-image: linear-gradient(
     to right,
@@ -266,6 +267,11 @@ footer a {
 }
 
 /* MEDIA QUERIES*/
+@media only screen and (max-width: 1000px) {
+  footer {
+    height: 40vh;
+  }
+}
 @media only screen and (max-width: 900px) {
   header nav ul {
     gap: 1rem;
