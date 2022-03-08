@@ -33,9 +33,10 @@ function showProduct(product) {
   myClone.querySelector(
     "img"
   ).src = `http://carolinethostrup.dk/CustomiseMeImages/${product.imageurl}`;
+  myClone.querySelector("img").alt = `${product.name}`;
   myClone
     .querySelector(".productButton")
-    .setAttribute("href", `productPage.html?id=${product._id}`);
+    .setAttribute("href", `productPage.html?_id=${product._id}`);
 
   // select parent & append
   const parent = document.querySelector("main");
