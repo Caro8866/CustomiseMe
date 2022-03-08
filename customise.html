@@ -37,6 +37,7 @@
       <!-- breadcrumb navigation -->
 
       <!-- main customise selection -->
+
       <header>
         <h1>CREATE YOUR CUSTOM SOAP</h1>
         <p>
@@ -46,135 +47,145 @@
           keep your body, brain and soul in perfect harmony.
         </p>
       </header>
-      <!-- soap image -->
-      <div class="soapCustomisationImage"></div>
+      <div class="customiseform">
+        <!-- soap image -->
+        <img
+          src="https://via.placeholder.com/400"
+          alt=""
+          class="soapCustomisationImage"
+        />
+        <form action="results.html" method="get">
+          <!-- need to connect to a netlify  -->
 
-      <form action="results.html" method="get">
-        <!-- need to connect to a netlify  -->
+          <section class="customiseSec part1">
+            <h2>STEP ONE:</h2>
+            <h3>CHOOSE YOUR BASE NOTE</h3>
+            <p>
+              This is the foundation of your soaps fragrence and will bring
+              depth and resonence to your soap's scent . (click to select)
+            </p>
+            <label for="cedarwood">Cedarwood</label>
+            <input type="radio" name="baseNote" id="cedarwood" required />
 
-        <section class="customiseSec part1">
-          <h2>STEP ONE:</h2>
-          <h3>CHOOSE YOUR BASE NOTE</h3>
-          <p>
-            This is the foundation of your soaps fragrence and will bring depth
-            and resonence to your soap's scent . (click to select)
-          </p>
-          <label for="cedarwood">Cedarwood</label>
-          <input type="radio" name="baseNote" id="cedarwood" required />
+            <label for="sandalwood">Sandalwood</label>
+            <input type="radio" name="baseNote" id="sandalwood" required />
+          </section>
 
-          <label for="sandalwood">Sandalwood</label>
-          <input type="radio" name="baseNote" id="sandalwood" required />
-        </section>
+          <section class="customiseSec part2">
+            <h2>STEP TWO:</h2>
+            <h3>CHOOSE YOUR HEAD NOTE</h3>
+            <p>
+              This is The first impression of your soaps fragrance and will
+              begin the story of your soaps scent. (click to select)
+            </p>
+            <label for="bergamot">Bergamot</label>
+            <input type="radio" name="headNote" id="bergamot" required />
 
-        <section class="customiseSec part2">
-          <h2>STEP TWO:</h2>
-          <h3>CHOOSE YOUR HEAD NOTE</h3>
-          <p>
-            This is The first impression of your soaps fragrance and will begin
-            the story of your soaps scent. (click to select)
-          </p>
-          <label for="bergamot">Bergamot</label>
-          <input type="radio" name="headNote" id="bergamot" required />
+            <label for="orangeSweet">Orange Sweet</label>
+            <input type="radio" name="headNote" id="orangeSweet" required />
 
-          <label for="orangeSweet">Orange Sweet</label>
-          <input type="radio" name="headNote" id="orangeSweet" required />
+            <label for="rosemary">Rosemary</label>
+            <input type="radio" name="headNote" id="rosemary" required />
+          </section>
 
-          <label for="rosemary">Rosemary</label>
-          <input type="radio" name="headNote" id="rosemary" required />
-        </section>
+          <section class="customiseSec part3">
+            <h2>STEP THREE:</h2>
+            <h3>CHOOSE YOUR HEART NOTE</h3>
+            <p>
+              <!-- NEED TO CHANGE DESC -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              corrupti molestias quos voluptatum.
+            </p>
+            <label for="Cinnamon">Cinnamon</label>
+            <input type="radio" name="heartNote" id="Cinnamon" required />
 
-        <section class="customiseSec part3">
-          <h2>STEP THREE:</h2>
-          <h3>CHOOSE YOUR HEART NOTE</h3>
-          <p>
-            <!-- NEED TO CHANGE DESC -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            corrupti molestias quos voluptatum.
-          </p>
-          <label for="Cinnamon">Cinnamon</label>
-          <input type="radio" name="heartNote" id="Cinnamon" required />
+            <label for="ginger">Ginger</label>
+            <input type="radio" name="heartNote" id="ginger" required />
 
-          <label for="ginger">Ginger</label>
-          <input type="radio" name="heartNote" id="ginger" required />
+            <label for="lavender">Lavender</label>
+            <input type="radio" name="heartNote" id="lavender" required />
+          </section>
 
-          <label for="lavender">Lavender</label>
-          <input type="radio" name="heartNote" id="lavender" required />
-        </section>
+          <section class="customiseSec part4">
+            <h2>STEP FOUR:</h2>
+            <h3>CHOOSE YOUR SHAPE</h3>
+            <p>
+              <!-- NEED TO CHANGE DESC -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              corrupti molestias quos voluptatum.
+            </p>
+            <label for="heart">Heart</label>
+            <input type="radio" name="soapShape" id="heart" required />
 
-        <section class="customiseSec part4">
-          <h2>STEP FOUR:</h2>
-          <h3>CHOOSE YOUR SHAPE</h3>
-          <p>
-            <!-- NEED TO CHANGE DESC -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            corrupti molestias quos voluptatum.
-          </p>
-          <label for="heart">Heart</label>
-          <input type="radio" name="soapShape" id="heart" required />
+            <label for="rectangular">Rectangular</label>
+            <input type="radio" name="soapShape" id="rectangular" required />
 
-          <label for="rectangular">Rectangular</label>
-          <input type="radio" name="soapShape" id="rectangular" required />
+            <label for="round">Round</label>
+            <input type="radio" name="soapShape" id="round" required />
 
-          <label for="round">Round</label>
-          <input type="radio" name="soapShape" id="round" required />
+            <label for="square">Square</label>
+            <input type="radio" name="soapShape" id="square" required />
 
-          <label for="square">Square</label>
-          <input type="radio" name="soapShape" id="square" required />
+            <label for="star">Star</label>
+            <input type="radio" name="soapShape" id="star" required />
 
-          <label for="star">Star</label>
-          <input type="radio" name="soapShape" id="star" required />
+            <label for="oval">Oval</label>
+            <input type="radio" name="soapShape" id="oval" required />
 
-          <label for="oval">Oval</label>
-          <input type="radio" name="soapShape" id="oval" required />
+            <label for="random">Surprise me!</label>
+            <input type="radio" name="soapShape" id="random" required />
+          </section>
 
-          <label for="random">Surprise me!</label>
-          <input type="radio" name="soapShape" id="random" required />
-        </section>
+          <section class="customiseSec part5">
+            <h2>STEP FIVE:</h2>
+            <h3>CHOOSE YOUR COLOUR</h3>
+            <p>
+              <!-- NEED TO CHANGE DESC -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              corrupti molestias quos voluptatum.
+            </p>
+            <label for="articWhite">Artic White</label>
+            <input type="radio" name="soapColour" id="articWhite" required />
 
-        <section class="customiseSec part5">
-          <h2>STEP FIVE:</h2>
-          <h3>CHOOSE YOUR COLOUR</h3>
-          <p>
-            <!-- NEED TO CHANGE DESC -->
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            corrupti molestias quos voluptatum.
-          </p>
-          <label for="articWhite">Artic White</label>
-          <input type="radio" name="soapColour" id="articWhite" required />
+            <label for="black">Black</label>
+            <input type="radio" name="soapColour" id="black" required />
 
-          <label for="black">Black</label>
-          <input type="radio" name="soapColour" id="black" required />
+            <label for="candyPink">Candy Pink</label>
+            <input type="radio" name="soapColour" id="candyPink" required />
 
-          <label for="candyPink">Candy Pink</label>
-          <input type="radio" name="soapColour" id="candyPink" required />
+            <label for="lightBlue">Light Blue</label>
+            <input type="radio" name="soapColour" id="lightBlue" required />
 
-          <label for="lightBlue">Light Blue</label>
-          <input type="radio" name="soapColour" id="lightBlue" required />
+            <label for="purplePassion">Purple Passion</label>
+            <input type="radio" name="soapColour" id="purplePassion" required />
 
-          <label for="purplePassion">Purple Passion</label>
-          <input type="radio" name="soapColour" id="purplePassion" required />
+            <label for="orange">Orange</label>
+            <input type="radio" name="soapColour" id="orange" required />
 
-          <label for="orange">Orange</label>
-          <input type="radio" name="soapColour" id="orange" required />
+            <label for="redIron">Red Iron</label>
+            <input type="radio" name="soapColour" id="redIron" required />
 
-          <label for="redIron">Red Iron</label>
-          <input type="radio" name="soapColour" id="redIron" required />
+            <label for="ultramarineBlue">Ultramarine Blue</label>
+            <input
+              type="radio"
+              name="soapColour"
+              id="ultramarineBlue"
+              required
+            />
 
-          <label for="ultramarineBlue">Ultramarine Blue</label>
-          <input type="radio" name="soapColour" id="ultramarineBlue" required />
+            <label for="yellow">Yellow</label>
+            <input type="radio" name="soapColour" id="yellow" required />
 
-          <label for="yellow">Yellow</label>
-          <input type="radio" name="soapColour" id="yellow" required />
+            <label for="yellow">Yellow</label>
+            <input type="radio" name="soapColour" id="yellow" required />
 
-          <label for="yellow">Yellow</label>
-          <input type="radio" name="soapColour" id="yellow" required />
+            <label for="colourless">Colourless</label>
+            <input type="radio" name="soapColour" id="colourless" required />
+          </section>
 
-          <label for="colourless">Colourless</label>
-          <input type="radio" name="soapColour" id="colourless" required />
-        </section>
-
-        <button>Create!</button>
-      </form>
+          <button>Create!</button>
+        </form>
+      </div>
     </main>
 
     <footer>

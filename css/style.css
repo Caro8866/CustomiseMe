@@ -186,6 +186,20 @@ footer a {
   padding: 1rem;
 }
 
+/* CUSTOMISATION FORM */
+.customiseform {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.soapCustomisationImage {
+  position: sticky;
+  top: 0%;
+  width: 100%;
+  height: auto;
+}
+
 /* MEDIA QUERIES*/
 @media only screen and (max-width: 900px) {
   header nav ul {
