@@ -401,3 +401,7 @@ footer a {
     order: 1;
   }
 }
+
+.hidden {
+  visibility: none;
+}
