@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Quicksand:wght@300;400;500;600;700&family=Suez+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&family=Suez+One&display=swap");
 :root {
   --bg-color: #f6eef8;
   --primary-color: #ff96aa;
@@ -7,7 +7,7 @@
   --darker-accent: #d4592f;
   --darker-color: #020c2d;
 
-  --header-font: "Suez-One", serif;
+  --header-font: "Suez One", serif;
   --subheading-font: "Quicksand", sans-serif;
   --p-font: "Assistant", sans-serif;
 }
@@ -52,11 +52,12 @@ a:active {
 
 p {
   font-family: var(--p-font);
+  font-weight: 400;
 }
 
 main {
   background-color: var(--bg-color);
-  background-image: url(../images/really_last.svg);
+  background-image: url(../Assets/really_last.svg);
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -96,6 +97,79 @@ header nav ul {
   font-size: 1.5rem;
   color: var(--darker-color);
 }
+
+/* Home page */
+main.homePage {
+  padding: 0;
+  gap: 0;
+}
+
+.homePage img {
+  width: 100%;
+}
+
+.homePage #cover {
+  position: relative;
+}
+
+.homePage h1 {
+  position: absolute;
+  top: -2%;
+  left: 21%;
+  font-size: 2.5rem;
+}
+
+.homePage .underWavey {
+  padding: 2rem;
+}
+
+.homePage .wavyLine img {
+  width: 100%;
+  position: absolute;
+  top: 90%;
+}
+
+#values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 3rem 0;
+}
+
+#values h2 {
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+#values p {
+  grid-column: 1 / -1;
+}
+
+.homePage .valueBtns {
+  background-image: url(../Assets/graphics/USP-icon.svg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  margin: auto;
+  aspect-ratio: 0.94 / 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/*
+.homePage #cover::before {
+  content: "Customise Me";
+  position: absolute;
+  color: black;
+  padding: 1rem;
+  font-family: var(--header-font);
+  font-size: 2rem;
+  text-align: center;
+}
+*/
+
 /* product page */
 
 .productImage {
@@ -178,7 +252,7 @@ main.productList {
   flex-direction: column;
   gap: 0.5rem;
   margin: 4rem 0 4rem 0;
-  background-image: url(../images/product_blob.svg);
+  background-image: url(../Assets/product_blob.svg);
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
