@@ -112,11 +112,15 @@ main.homePage {
   position: relative;
 }
 
-.homePage h1 {
+.homePage #cover h1 {
   position: absolute;
   top: -2%;
-  left: 21%;
+  left: 18%;
   font-size: 2.5rem;
+}
+
+.homePage .titleTag {
+  display: none;
 }
 
 .homePage .underWavey {
@@ -132,7 +136,7 @@ main.homePage {
 #values {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 1rem 4rem;
   margin: 3rem 0;
 }
 
@@ -148,14 +152,34 @@ main.homePage {
 .homePage .valueBtns {
   background-image: url(../Assets/graphics/USP-icon.svg);
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
   margin: auto;
-  aspect-ratio: 0.94 / 1;
+  aspect-ratio: 1 / 1;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   width: 100%;
+  margin: 2rem auto;
+}
+
+.homePage #values a {
+  grid-column: -2/-1;
+}
+
+.homePage #favourites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0;
+  gap: 1rem;
+}
+
+.homePage #favourites h2 {
+  margin: auto;
+}
+
+.homePage .productCard {
+  margin: 2rem auto;
 }
 
 /*
@@ -392,11 +416,81 @@ footer a {
   .productList h2 {
     font-size: 2rem;
   }
+
+  .homePage #cover h1 {
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    font-size: 2.5rem;
+  }
+
+  .homePage .valueBtns {
+    width: 70%;
+  }
+
+  .homePage #favourites {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 6rem 0;
+    gap: 1rem;
+  }
+
+  .homePage #favourites h2,
+  p {
+    grid-column: 1 / -1;
+  }
 }
+/* when the screen is small laptop */
 
-/* when the screen is normal laptop */
+@media only screen and (min-width: 768px) {
+  .homePage #cover h1:nth-child(3) {
+    display: none;
+  }
+  .underWavey p:nth-child(1) {
+    display: none;
+  }
 
-@media only screen and (min-width: 800px) {
+  .homePage .titleTag {
+    display: block;
+    position: relative;
+    top: 20%;
+    left: 30%;
+  }
+
+  .homePage #cover h1 {
+    position: static;
+    font-size: 3rem;
+  }
+
+  .homePage #cover {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
+
+  .homePage .wavyLine img {
+    top: 84%;
+  }
+
+  .homePage #values {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .homePage #values h2 {
+    font-size: 2rem;
+  }
+  .homePage .valueBtns {
+    width: 100%;
+  }
+  .homePage h2 {
+    font-size: 3rem;
+  }
+
+  .homePage .underWavey p {
+    font-size: 1.5rem;
+  }
+
   main.productList {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -413,11 +507,29 @@ footer a {
     gap: 6rem;
     padding: 0 4rem 4rem;
   }
+
+  .homePage #cover h1 {
+    font-size: 3rem;
+  }
+  .homePage #values {
+    column-gap: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .homePage .valueBtns {
+    width: 80%;
+  }
+  .homePage #favourites {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 6rem 0 8rem;
+    gap: 1rem;
+  }
 }
 
 /* when the screen is a big laptop or desktop */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
   h2 {
     font-size: 3rem;
   }
@@ -433,6 +545,38 @@ footer a {
   .productPage {
     padding: 6rem;
     gap: 6rem;
+  }
+
+  .homePage #cover h1 {
+    font-size: 4.7rem;
+  }
+
+  .homePage #cover .titleTag p {
+    font-size: 2rem;
+  }
+
+  .homePage #values {
+    column-gap: 8rem;
+    row-gap: 4rem;
+  }
+  .homePage #favourites {
+    column-gap: 8rem;
+    row-gap: 4rem;
+  }
+  .homePage .underWavey {
+    padding: 4rem;
+  }
+
+  .homePage #values h2 {
+    font-size: 3rem;
+  }
+
+  .homePage #values a {
+    font-size: 1.5rem;
+    grid-column: -2/-1;
+  }
+  .homePage .wavyLine img {
+    top: 83%;
   }
 }
 
