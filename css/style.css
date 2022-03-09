@@ -36,6 +36,9 @@ a {
   font-family: var(--subheading-font);
   font-weight: 600;
 }
+a {
+  transition: color 0.3s ease;
+}
 
 a:link {
   color: var(--darker-color);
@@ -73,6 +76,7 @@ header {
     var(--primary-color)
   );
   padding: 1.5rem;
+  padding-right: 0;
 }
 header nav ul {
   display: flex;
@@ -86,7 +90,11 @@ header nav ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  gap: 1rem;
+  margin-right: 1rem;
 }
+
 .logo {
   aspect-ratio: 1/1;
   width: 4rem;
@@ -96,6 +104,18 @@ header nav ul {
 .fa-shopping-cart {
   font-size: 1.5rem;
   color: var(--darker-color);
+}
+
+/* burger menu */
+.burger {
+  display: none;
+}
+.burger div {
+  background-color: var(--darker-color);
+  width: 2rem;
+  height: 0.3rem;
+  margin: 5px;
+  border-radius: 3px;
 }
 
 /* Home page */
@@ -308,6 +328,7 @@ main.productList {
   border: none;
   color: var(--bg-color);
   box-shadow: 0 4px 4px grey;
+  cursor: pointer;
 }
 
 /* footer */
@@ -425,9 +446,46 @@ label > img {
     gap: 1rem;
   }
 }
+@media only screen and (max-width: 650px) {
+  .menu {
+    position: absolute;
+    right: 0;
+    height: 50vh;
+    top: 6.2vh;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    background-color: var(--bg-color);
+    z-index: 1;
+    gap: 1rem;
+    justify-content: space-around;
+    transform: translateX(120%);
+    transition: transform 0.5s ease-in;
+    padding: 1rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .logo_link {
+    position: absolute;
+    left: 2%;
+  }
+  .header-nav {
+    justify-content: flex-end;
+  }
+  .menu-active {
+    transform: translateX(8%);
+  }
+}
 @media only screen and (max-width: 600px) {
   footer {
-    height: 100vh;
+    height: 50vh;
   }
 }
 
@@ -440,14 +498,28 @@ label > img {
     flex-wrap: wrap;
   }
   .company-info {
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 2;
+  }
+  footer {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .company-info {
     flex-direction: column;
     justify-content: center;
     flex-grow: 2;
   }
+  footer {
+    height: 110vh;
+  }
 }
+
 @media only screen and (max-width: 400px) {
   footer {
-    height: 150vh;
+    height: 140vh;
   }
 }
 
