@@ -282,6 +282,12 @@ footer a {
     gap: 1rem;
   }
 }
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 560px) {
   footer nav {
     flex-wrap: wrap;
@@ -294,6 +300,11 @@ footer a {
     flex-direction: column;
     justify-content: center;
     flex-grow: 2;
+  }
+}
+@media only screen and (max-width: 400px) {
+  footer {
+    height: 150vh;
   }
 }
 
