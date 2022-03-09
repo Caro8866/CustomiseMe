@@ -266,19 +266,19 @@ main.productList {
   grid-column: 1 / -1;
 }
 
-.productList .productCard h3,
+.productCard h3,
 .productList .productCard h4 {
   margin: 0.2rem 0;
 }
 
-.productList .productCard {
+.productCard {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin: 4rem 0 4rem 0;
   background-image: url(../Assets/product_blob.svg);
   background-repeat: no-repeat;
-  background-position-y: bottom;
+  background-position-y: top;
 }
 
 .productList img {
@@ -294,7 +294,8 @@ main.productList {
   margin: auto;
 }
 
-.productList button {
+.productList button,
+.homePage button {
   font-family: var(--subheading-font);
   font-size: 0.8rem;
   font-weight: 500;
@@ -560,7 +561,7 @@ label > img {
   }
 
   main.productList {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .productList h2 {
@@ -570,10 +571,6 @@ label > img {
 
   .productList p {
     font-size: 1.2rem;
-  }
-  main.productList {
-    gap: 6rem;
-    padding: 0 4rem 4rem;
   }
 
   .homePage #cover h1 {
@@ -592,6 +589,10 @@ label > img {
     grid-template-columns: repeat(4, 1fr);
     margin: 6rem 0 8rem;
     gap: 1rem;
+  }
+
+  main.productList {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -645,6 +646,12 @@ label > img {
   }
   .homePage .wavyLine img {
     top: 83%;
+  }
+
+  main.productList {
+    gap: 6rem;
+    padding: 0 4rem 4rem;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
