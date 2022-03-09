@@ -477,6 +477,11 @@ label > img {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
+
+  .menu li a:hover {
+    font-size: 1.5rem;
+    transition: font-size 0.5s ease-in-out;
+  }
   body {
     overflow-x: hidden;
   }
