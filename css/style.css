@@ -486,13 +486,11 @@ label > img {
 
   .soapCustomisationImage {
     top: 25%;
-    padding: 3rem 5rem;
   }
 
   .formOptions {
     margin: 2rem 0;
-
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .customiseSecAll {
@@ -562,8 +560,29 @@ label > img {
   .customiseSec_part1,
   .customiseSec_part2,
   .customiseSec_part3 {
-    padding: 2rem 5rem 0 2rem;
+    padding: 2rem 4rem 0 0;
   }
+
+  .soapCustomisationImage {
+    padding: 3rem 4rem;
+  }
+
+  .customiseSec_part2 .formOptions,
+  .customiseSec_part3 .formOptions,
+  .customiseSec_part4 .formOptions,
+  .customiseSec_part5 .formOptions
+  {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:0;
+  }
+
+  .customiseSec_part4 [type="radio"] + img,
+  .customiseSec_part4 [type="radio"] + img {
+    
+    width: 40%;
+    
+}
+
   .homePage #cover h1:nth-child(3) {
     display: none;
   }
@@ -669,13 +688,7 @@ label > img {
   [type="radio"] + img {
     width: 65%;
   }
-  .soapCustomisationImage {
-    top: 16%;
-    padding: 4rem 12rem;
-  }
-  main.customisePage{
-    padding: 4rem;
-  }
+
 }
 
 /* when the screen is a big laptop or desktop */
@@ -738,6 +751,14 @@ label > img {
     gap: 6rem;
     padding: 0 4rem 4rem;
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .soapCustomisationImage {
+    top: 16%;
+    padding: 4rem 10rem;
+  }
+  main.customisePage{
+    padding: 4rem;
   }
 }
 
