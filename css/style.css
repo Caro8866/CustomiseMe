@@ -451,11 +451,12 @@ label > img {
     position: absolute;
     right: 0;
     height: 50vh;
-    top: 6.2vh;
+    top: 6.1vh;
     flex-direction: column;
     width: 50%;
     align-items: center;
-    background-color: var(--bg-color);
+    background-color: #e8d1ec;
+
     z-index: 1;
     gap: 1rem;
     justify-content: space-around;
@@ -472,7 +473,7 @@ label > img {
     display: block;
     cursor: pointer;
   }
-  .logo_link {
+  .logo-link {
     position: absolute;
     left: 2%;
   }
