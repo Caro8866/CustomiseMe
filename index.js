@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 
-const url = "https://kea22-7490.restdb.io/rest/customiseme";
+const url = "https://kea22-7490.restdb.io/rest/customiseme?skip=4&max=4";
 
 const products = {
   headers: {
@@ -10,21 +10,21 @@ const products = {
 
 fetch(url, products)
   .then((res) => res.json())
-  .then((data) => handleProductList(data));
+  .then((data) => handleFavourites(data));
 
-function handleProductList(data) {
+function handleFavourites(data) {
   console.log(data);
-  data.forEach(showProduct);
+  data.forEach(showFavourites);
 }
 
-function showProduct(product) {
+function showFavourites(product) {
   // grab template
   const template = document.querySelector("template").content;
 
   // clone template
   const myClone = template.cloneNode(true);
 
-  // change content
+  //  change content
   myClone.querySelector(".productName").textContent = product.productname;
   myClone.querySelector(".essential-oil-1").textContent =
     product.essentialoilname1;
@@ -37,13 +37,15 @@ function showProduct(product) {
   myClone
     .querySelector(".productButton")
     .setAttribute("href", `productPage.html?_id=${product._id}`);
+  myClone.querySelector(".price").textContent = `DKK ${product.price},-`;
 
   // select parent & append
-  const parent = document.querySelector("main");
+  const parent = document.querySelector("#favourites");
   parent.appendChild(myClone);
 }
 
 // burger button js
+
 const showNav = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".menu");
