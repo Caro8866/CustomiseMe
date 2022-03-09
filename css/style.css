@@ -198,9 +198,7 @@ main.homePage {
 
 .productImage {
   width: 100%;
-  margin: auto;
-  /*border: #020c2d 1px solid;*/
-  border-radius: 4px;
+  border: black 2px solid;
 }
 
 ul.breadcrumbs {
@@ -222,7 +220,8 @@ ul.breadcrumbs {
   flex-direction: column;
 }
 
-.productPage button {
+.productPage button,
+.customisePage button {
   font-family: var(--subheading-font);
   font-size: 1.2rem;
   font-weight: 500;
@@ -244,13 +243,10 @@ ul.breadcrumbs {
 }
 
 .productPage .benefits {
-  background-color: var(--bg-color);
-  box-shadow: 0 4px 4px grey;
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 0 0 3rem 0;
+  margin: 3rem 0 0 0;
 }
 
 /*product list page*/
@@ -258,7 +254,7 @@ ul.breadcrumbs {
 main.productList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 3rem 1rem 8rem 1rem;
+  padding: 2rem 2rem 6rem 2rem;
   gap: 1rem;
 }
 
@@ -378,6 +374,7 @@ footer a {
   width: 100%;
   height: auto;
   padding-top: 1.5rem;
+  border: black 2px solid;
 }
 
 .customiseSecAll {
@@ -503,9 +500,8 @@ label > img {
 
   main.productPage {
     display: grid;
-    grid-template-columns: 1.6fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 3rem;
-    gap: 3rem;
   }
 
   main.productList {
@@ -559,8 +555,10 @@ label > img {
 @media only screen and (min-width: 768px) {
   .customiseSec_part1,
   .customiseSec_part2,
-  .customiseSec_part3 {
-    padding: 2rem 4rem 0 0;
+  .customiseSec_part3,
+  .customiseSec_part4,
+  .customiseSec_part5 {
+    padding: 2rem 4rem;
   }
 
   .soapCustomisationImage {
@@ -570,18 +568,15 @@ label > img {
   .customiseSec_part2 .formOptions,
   .customiseSec_part3 .formOptions,
   .customiseSec_part4 .formOptions,
-  .customiseSec_part5 .formOptions
-  {
+  .customiseSec_part5 .formOptions {
     grid-template-columns: 1fr 1fr 1fr;
-    gap:0;
+    gap: 0;
   }
 
   .customiseSec_part4 [type="radio"] + img,
   .customiseSec_part4 [type="radio"] + img {
-    
     width: 40%;
-    
-}
+  }
 
   .homePage #cover h1:nth-child(3) {
     display: none;
@@ -652,12 +647,17 @@ label > img {
 }
 
 @media only screen and (min-width: 1024px) {
+  .customisePage h1,
+  .productList h1 {
+    font-size: 2rem;
+  }
+
   h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .homePage .valueBtns {
@@ -672,13 +672,24 @@ label > img {
   main.productList {
     grid-template-columns: repeat(4, 1fr);
   }
-  .productPage .productImage {
-    padding: 6rem;
-    width: 85%;
+
+  main.customisePage {
+    padding: 2rem 2rem 6rem 2rem;
   }
 
+  main.productPage {
+    padding: 2rem 2rem 6rem 2rem;
+    gap: 1.5rem;
+  }
+  .productPage .productImage {
+    padding: 5rem;
+    width: 92%;
+  }
   .productPage .productInfo {
-    padding: 6rem 0;
+    padding: 0 4rem;
+  }
+  .productInfo .h4 {
+    margin: 0;
   }
 
   label > h4 {
@@ -688,7 +699,9 @@ label > img {
   [type="radio"] + img {
     width: 65%;
   }
-
+  .soapCustomisationImage {
+    padding: 3rem 4rem;
+  }
 }
 
 /* when the screen is a big laptop or desktop */
@@ -700,6 +713,7 @@ label > img {
 
   h2 {
     font-size: 3rem;
+    margin: 0;
   }
 
   h3 {
@@ -713,6 +727,10 @@ label > img {
   .productPage {
     padding: 6rem;
     gap: 6rem;
+  }
+
+  .productPage .productImage {
+    padding: 4rem 9rem;
   }
 
   .homePage #cover h1 {
@@ -749,15 +767,18 @@ label > img {
 
   main.productList {
     gap: 6rem;
-    padding: 0 4rem 4rem;
+    padding: 4rem;
     grid-template-columns: repeat(5, 1fr);
   }
 
   .soapCustomisationImage {
     top: 16%;
-    padding: 4rem 10rem;
+    padding: 6rem 10rem;
   }
-  main.customisePage{
+  main {
+    padding: 4rem;
+  }
+  main.productPage {
     padding: 4rem;
   }
 }
@@ -800,9 +821,8 @@ label > img {
   #values {
     order: 1;
   }
-}
 
-.hidden {
-  visibility: none;
-}
+  .hidden {
+    visibility: none;
+  }
 }
