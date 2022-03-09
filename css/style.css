@@ -377,21 +377,47 @@ footer a {
   top: 20%;
   width: 100%;
   height: auto;
-  padding: 1.5rem 0.5rem;
+  padding-top: 1.5rem;
 }
 
 .customiseSecAll {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
-.customiseSec_part1 {
+.customiseSec_part1,
+.customiseSec_part2,
+.customiseSec_part3,
+.customiseSec_part4,
+.customiseSec_part5 {
   display: flex;
   flex-direction: column;
 }
 
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.formOptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+/*.cedarwoodLabel {
+  position: relative;
+}
+
+.cedarwoodLabel h4 {
+  position: absolute;
+}*/
+
 label > h4 {
   text-align: center;
+  margin: 0;
 }
 
 label > img {
@@ -411,7 +437,8 @@ label > img {
 [type="radio"] + img {
   cursor: pointer;
   opacity: 65%;
-  width: 30%;
+  width: 90%;
+  margin: auto;
 }
 
 /* CHECKED STYLES */
@@ -454,12 +481,22 @@ label > img {
 @media only screen and (min-width: 480px) {
   .customiseform {
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .soapCustomisationImage {
-    top: 0%;
-    padding: 5rem;
+    top: 25%;
+    padding: 3rem 5rem;
+  }
+
+  .formOptions {
+    margin: 2rem 0;
+
+    gap: 4rem;
+  }
+
+  .customiseSecAll {
+    gap: 3rem;
   }
 
   .breadcrumbs {
@@ -522,6 +559,11 @@ label > img {
 /* when the screen is small laptop */
 
 @media only screen and (min-width: 768px) {
+  .customiseSec_part1,
+  .customiseSec_part2,
+  .customiseSec_part3 {
+    padding: 2rem 5rem 0 2rem;
+  }
   .homePage #cover h1:nth-child(3) {
     display: none;
   }
@@ -591,6 +633,14 @@ label > img {
 }
 
 @media only screen and (min-width: 1024px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
   .homePage .valueBtns {
     width: 80%;
   }
@@ -611,11 +661,30 @@ label > img {
   .productPage .productInfo {
     padding: 6rem 0;
   }
+
+  label > h4 {
+    font-size: 1.5rem;
+  }
+
+  [type="radio"] + img {
+    width: 65%;
+  }
+  .soapCustomisationImage {
+    top: 16%;
+    padding: 4rem 12rem;
+  }
+  main.customisePage{
+    padding: 4rem;
+  }
 }
 
 /* when the screen is a big laptop or desktop */
 
 @media only screen and (min-width: 1280px) {
+  .customiseSecAll {
+    gap: 4rem;
+  }
+
   h2 {
     font-size: 3rem;
   }
@@ -714,4 +783,5 @@ label > img {
 
 .hidden {
   visibility: none;
+}
 }
