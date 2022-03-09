@@ -461,7 +461,7 @@ label > img {
     gap: 1rem;
     justify-content: space-around;
     transform: translateX(120%);
-    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in-out;
     padding: 1rem;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
