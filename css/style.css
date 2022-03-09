@@ -315,7 +315,8 @@ main.productList {
 }
 
 .productList button,
-.homePage button {
+.homePage button,
+button {
   font-family: var(--subheading-font);
   font-size: 0.8rem;
   font-weight: 500;
