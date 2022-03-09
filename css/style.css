@@ -317,14 +317,22 @@ footer nav {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  grid-row: 2;
 }
 footer {
-  background-image: linear-gradient(
+  background-image: url(/Assets/graphics/full-footer.svg);
+  background-size: cover;
+  background-position: inherit;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 55vh;
+
+  /* background-image: linear-gradient(
     to right,
     var(--primary-color),
     var(--secondary-color),
     var(--accent-color)
-  );
+  ); */
 }
 footer a {
   font-family: var(--p-font);
@@ -401,6 +409,11 @@ label > img {
 }
 
 /* MEDIA QUERIES*/
+@media only screen and (max-width: 1000px) {
+  footer {
+    height: 40vh;
+  }
+}
 @media only screen and (max-width: 900px) {
   header nav ul {
     gap: 1rem;
