@@ -1215,6 +1215,14 @@ label > img {
   main.productPage {
     padding: 4rem;
   }
+
+  .soapAndReset {
+    padding: 8rem;
+  }
+
+  .customiseSecAll {
+    padding: 10rem 6rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
