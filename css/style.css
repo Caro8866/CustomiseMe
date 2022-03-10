@@ -276,8 +276,7 @@ ul.breadcrumbs {
 #createButton:hover,
 .productButton button:hover,
 .productPage button:hover {
-  scale: 1.2;
-  transition: scale 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border: 3px solid var(--darker-accent);
   background-color: var(--accent-color);
   box-shadow: none;
@@ -413,6 +412,9 @@ main.productList {
   justify-content: space-around;
   align-items: left;
   gap: 0.3rem;
+}
+button {
+  cursor: pointer;
 }
 
 .productButton {
