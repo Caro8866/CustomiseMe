@@ -691,6 +691,14 @@ label > img {
     margin-left: 0;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .homePage #cover h1 {
+    font-size: 5rem;
+    top: 30%;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .menu {
     position: absolute;
