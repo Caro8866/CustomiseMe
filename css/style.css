@@ -519,7 +519,6 @@ footer a {
   height: auto;
   padding: 1rem;
   margin-top: 1.5rem;
-  border: black 2px solid;
   background-color: var(--primary-color);
   position: -webkit-sticky;
   position: sticky;
@@ -807,7 +806,6 @@ label > img {
   }
 
   .productPage button {
-    margin: 0;
     padding: 1rem 1rem;
   }
 
@@ -1029,10 +1027,6 @@ label > img {
     margin: 3rem;
     padding: 3rem 6rem;
     width: 80%;
-  }
-
-  .homePage #cover h1 {
-    font-size: 4.7rem;
   }
 
   .homePage #cover .titleTag p {
