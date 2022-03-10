@@ -966,11 +966,11 @@ label > img {
   .customiseSec_part3,
   .customiseSec_part4,
   .customiseSec_part5 {
-    padding: 2rem 4rem;
+    padding: 0 4rem;
   }
 
   .soapCustomisationImage {
-    padding: 3rem 4rem;
+    padding: 2rem;
   }
 
   .customiseSec_part2 .formOptions,
@@ -1116,7 +1116,16 @@ label > img {
     width: 65%;
   }
   .soapCustomisationImage {
-    padding: 3rem 4rem;
+    padding: 2.5rem;
+    margin-bottom: 7rem;
+  }
+
+  .soapAndReset {
+    padding: 1rem;
+  }
+
+  .soapAndReset button {
+    top: 71%;
   }
   .productPage {
     padding: 6rem;
@@ -1133,7 +1142,7 @@ label > img {
 
 /* when the screen is a big laptop or desktop */
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1400px) {
   h2 {
     font-size: 3rem;
     margin: 0;
@@ -1148,9 +1157,13 @@ label > img {
   }
 
   .productPage .productImage {
-    margin: 3rem;
+    margin: 0 3rem;
     padding: 3rem 6rem;
     width: 80%;
+  }
+
+  .productPrice {
+    margin: 0;
   }
 
   .homePage #cover .titleTag p {
@@ -1197,12 +1210,13 @@ label > img {
     padding: 0;
   }
   .customiseform {
-    padding: 2rem 8rem;
-    gap: 8rem;
+    padding: 4rem 8rem;
+    gap: 1rem;
   }
   .soapCustomisationImage {
     top: 16%;
-    padding: 4rem 6rem;
+    padding: 3rem;
+    margin-bottom: 8rem;
   }
 
   .customiseSec_part4 [type="radio"] + img {
@@ -1213,15 +1227,19 @@ label > img {
     padding: 4rem;
   }
   main.productPage {
-    padding: 4rem;
+    padding: 2rem 4rem;
   }
 
   .soapAndReset {
-    padding: 8rem;
+    padding: 0 6rem;
   }
 
   .customiseSecAll {
-    padding: 10rem 6rem;
+    padding: 0 3rem;
+  }
+
+  .soapAndReset button {
+    top: 74%;
   }
 }
 
