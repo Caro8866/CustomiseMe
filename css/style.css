@@ -564,6 +564,24 @@ footer a {
   );
 }
 
+.gingerBackground {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    #2a5dfe,
+    var(--bg-color)
+  );
+}
+
+.lavendarBackground {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    #2a5dfe,
+    var(--darker-accent)
+  );
+}
+
 .customiseSecAll {
   display: flex;
   flex-direction: column;

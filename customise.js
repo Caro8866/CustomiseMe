@@ -23,11 +23,16 @@ document
   .addEventListener("click", cinnamonBackground);
 
 document
-  .querySelector("#cinnamonButton")
-  .addEventListener("click", cinnamonBackground);
+  .querySelector("#gingerButton")
+  .addEventListener("click", gingerBackground);
+
+document
+  .querySelector("#lavendarButton")
+  .addEventListener("click", lavenderBackground);
 
 document.querySelector("#resetButton").addEventListener("click", reset);
 document.querySelector("#createButton").addEventListener("click", reset);
+
 function cedarBackground() {
   console.log("cedarBackground");
   document
@@ -57,9 +62,6 @@ function bergamotBackground() {
     .classList.remove("rosemaryBackground");
   document.querySelector("#changingSoap").classList.remove("cedarBackground");
   document.querySelector("#changingSoap").classList.remove("sandalBackground");
-  document
-    .querySelector("#changingSoap")
-    .classList.remove("cinnamonBackground");
   document.querySelector("#changingSoap").classList.add("bergamotBackground");
 }
 
@@ -75,9 +77,6 @@ function orangeSweetBackground() {
   document.querySelector("#changingSoap").classList.remove("sandalBackground");
   document
     .querySelector("#changingSoap")
-    .classList.remove("cinnamonBackground");
-  document
-    .querySelector("#changingSoap")
     .classList.add("orangeSweetBackground");
 }
 
@@ -91,9 +90,7 @@ function rosemaryBackground() {
     .classList.remove("orangeSweetBackground");
   document.querySelector("#changingSoap").classList.remove("cedarBackground");
   document.querySelector("#changingSoap").classList.remove("sandalBackground");
-  document
-    .querySelector("#changingSoap")
-    .classList.remove("cinnamonBackground");
+
   document.querySelector("#changingSoap").classList.add("rosemaryBackground");
 }
 
@@ -110,7 +107,53 @@ function cinnamonBackground() {
   document
     .querySelector("#changingSoap")
     .classList.remove("rosemaryBackground");
+  document.querySelector("#changingSoap").classList.remove("gingerBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("lavendarBackground");
   document.querySelector("#changingSoap").classList.add("cinnamonBackground");
+}
+
+function gingerBackground() {
+  console.log("gingerBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("bergamotBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("orangeSweetBackground");
+  document.querySelector("#changingSoap").classList.remove("cedarBackground");
+  document.querySelector("#changingSoap").classList.remove("sandalBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("rosemaryBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("cinnamonBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("lavendarBackground");
+  document.querySelector("#changingSoap").classList.add("gingerBackground");
+}
+
+function lavenderBackground() {
+  console.log("lavenderBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("bergamotBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("orangeSweetBackground");
+  document.querySelector("#changingSoap").classList.remove("cedarBackground");
+  document.querySelector("#changingSoap").classList.remove("sandalBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("rosemaryBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("cinnamonBackground");
+  document.querySelector("#changingSoap").classList.remove("gingerBackground");
+  document.querySelector("#changingSoap").classList.add("lavendarBackground");
 }
 
 function reset() {
@@ -128,4 +171,8 @@ function reset() {
   document
     .querySelector("#changingSoap")
     .classList.remove("cinnamonBackground");
+  document.querySelector("#changingSoap").classList.remove("gingerBackground");
+  document
+    .querySelector("#changingSoap")
+    .classList.remove("lavendarBackground");
 }
