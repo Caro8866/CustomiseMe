@@ -675,6 +675,11 @@ label {
   grid-template-columns: 1fr 1fr;
   margin: 1rem 0;
   gap: 1rem;
+
+  font-family: var(--subheading-font);
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2rem;
 }
 
 /*.cedarwoodLabel {
@@ -685,11 +690,13 @@ label {
   position: absolute;
 }*/
 
-label > h4 {
+label > p.labelHeading {
+  font-family: var(--subheading-font);
+  font-weight: 600;
   text-align: center;
   margin: 0;
+  font-size: 1.2rem;
 }
-
 label > img {
   width: 40%;
 }
