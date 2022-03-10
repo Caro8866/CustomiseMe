@@ -54,11 +54,18 @@
       </article>
       <div class="customiseform">
         <!-- soap image -->
-        <img
-          src="Assets/calming_soap.webp"
-          alt=""
-          class="soapCustomisationImage"
-        />
+
+        <div class="soapAndReset">
+          <img
+            src="Assets/calming_soap.webp"
+            alt=""
+            class="soapCustomisationImage"
+            id="changingSoap"
+          />
+
+          <button id="resetButton">Reset!</button>
+        </div>
+
         <form action="results.html" method="get">
           <!-- need to connect to a netlify  -->
           <article class="customiseSecAll">
@@ -79,6 +86,7 @@
                     required
                   />
                   <img
+                    id="cedarButton"
                     src="Assets/graphics/Blob3.svg"
                     alt="Blue and red blobs"
                   />
@@ -93,6 +101,7 @@
                     required
                   />
                   <img
+                    id="sandalButton"
                     src="Assets/graphics/Blob3.svg"
                     alt="Blue and red blobs"
                   />
@@ -117,6 +126,7 @@
                     required
                   />
                   <img
+                    id="bergamotButton"
                     src="Assets/graphics/Blob1.svg"
                     alt="Blue and red blobs"
                   />
@@ -130,6 +140,7 @@
                     required
                   />
                   <img
+                    id="orangeSweetButton"
                     src="Assets/graphics/Blob4.svg"
                     alt="Blue and red blobs"
                   />
@@ -143,6 +154,7 @@
                     required
                   />
                   <img
+                    id="rosemaryButton"
                     src="Assets/graphics/Blob3.svg"
                     alt="Blue and red blobs"
                   />
@@ -168,6 +180,7 @@
                     required
                   />
                   <img
+                    id="cinnamonButton"
                     src="Assets/graphics/Blob5.svg"
                     alt="Blue and red blobs"
                   />
@@ -431,7 +444,7 @@
               </div>
             </section>
 
-            <button>Create!</button>
+            <button id="createButton">Create!</button>
           </article>
         </form>
       </div>
@@ -479,6 +492,6 @@
       </nav>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="customise.js"></script>
   </body>
 </html>

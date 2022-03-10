@@ -305,6 +305,7 @@ main.productList {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  padding: 0 1rem;
   /*background-image: url(../Assets/product_blob.svg);
   background-repeat: no-repeat;
   background-position-y: top;*/
@@ -314,10 +315,21 @@ main.productList {
   content: "";
   background-image: url(../Assets/product_blob.svg);
   background-size: cover;
+  background-position: bottom;
   position: absolute;
   right: 0px;
   left: 0px;
-  opacity: 0.5;
+  opacity: 0.3;
+  aspect-ratio: 1 / 1;
+}
+.productCardParent:hover::before {
+  content: "";
+  background-image: url(../Assets/product_blob.svg);
+  background-size: cover;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  opacity: 1;
   aspect-ratio: 1 / 1;
 }
 
@@ -332,6 +344,10 @@ main.productList {
 
 .productCard .cardText {
   margin: auto;
+}
+
+.productCard p {
+  margin: 0;
 }
 
 .productList button,
@@ -415,14 +431,54 @@ footer a {
 }
 
 .soapCustomisationImage {
-  position: sticky;
-  top: 20%;
   width: 100%;
   height: auto;
   padding: 1rem;
   margin-top: 1.5rem;
   border: black 2px solid;
   background-color: var(--primary-color);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20%;
+}
+
+.soapAndReset button {
+  position: sticky;
+  top: 32%;
+  padding: 1rem;
+}
+
+.cedarBackground {
+  background-color: var(--darker-accent);
+}
+
+.sandalBackground {
+  background-color: var(--accent-color);
+}
+
+.bergamotBackground {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    var(--secondary-color)
+  );
+}
+
+.orangeSweetBackground {
+  background-image: linear-gradient(to right, var(--accent-color), #688af8);
+}
+
+.rosemaryBackground {
+  background-image: linear-gradient(to right, var(--accent-color), #2a5dfe);
+}
+
+.cinnamonBackground {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color),
+    #2a5dfe,
+    var(--primary-color)
+  );
 }
 
 .customiseSecAll {
@@ -610,6 +666,12 @@ label > img {
     gap: 3rem;
   }
 
+  .soapAndReset button {
+    position: sticky;
+    top: 60%;
+    padding: 1rem;
+  }
+
   .breadcrumbs {
     grid-column: 1/-1;
   }
@@ -659,7 +721,7 @@ label > img {
     grid-column: 1 / -1;
   }
 }
-/* when the screen is small laptop */
+/* when the screen is i pad and up */
 
 @media only screen and (min-width: 768px) {
   .customiseSec_part1,
@@ -686,7 +748,11 @@ label > img {
   .customiseSec_part4 [type="radio"] + img {
     width: 40%;
   }
-
+  .soapAndReset button {
+    position: sticky;
+    top: 80%;
+    padding: 1rem;
+  }
   .homePage #cover h1:nth-child(3) {
     display: none;
   }
@@ -704,6 +770,7 @@ label > img {
   .homePage #cover h1 {
     position: static;
     font-size: 3rem;
+    transform: none;
   }
 
   .homePage #cover {
@@ -754,7 +821,7 @@ label > img {
     column-gap: 4rem;
   }
 }
-
+/*small screen*/
 @media only screen and (min-width: 1024px) {
   .customisePage h1,
   .productList h1 {
@@ -819,8 +886,7 @@ label > img {
     margin: 3rem;
   }
   .customiseform {
-    padding: 2rem 8rem;
-    gap: 8rem;
+    padding: 2rem;
   }
 }
 
