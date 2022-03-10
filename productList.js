@@ -33,6 +33,8 @@ function showProduct(product) {
   myClone.querySelector(
     "img"
   ).src = `http://carolinethostrup.dk/CustomiseMeImages/${product.imageurl}`;
+  myClone.querySelector(".price").textContent = `DKK ${product.price},-`;
+
   myClone.querySelector("img").alt = `${product.name}`;
   myClone
     .querySelector(".productButton")
