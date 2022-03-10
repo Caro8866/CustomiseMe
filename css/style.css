@@ -508,7 +508,24 @@ footer a {
   gap: 3rem;
   padding: 1rem;
 }
+/* thank you page */
 
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid var(--secondary-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 3rem;
+  margin-right: 15rem;
+  margin-left: 15rem;
+}
+.thankYou h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
 /* CUSTOMISATION FORM */
 .customiseform {
   display: grid;
@@ -679,16 +696,28 @@ label > img {
     font-size: 5rem;
     top: 10%;
   }
+  .thankYou {
+    margin-right: 10rem;
+    margin-left: 10rem;
+  }
 }
 @media only screen and (max-width: 800px) {
   footer nav {
     gap: 1rem;
+  }
+  .thankYou {
+    margin-right: 7rem;
+    margin-left: 7rem;
   }
 }
 @media only screen and (max-width: 700px) {
   .listIntro p {
     margin-right: 0;
     margin-left: 0;
+  }
+  .thankYou {
+    margin-right: 5rem;
+    margin-left: 5rem;
   }
 }
 
@@ -764,6 +793,10 @@ label > img {
   footer {
     height: 80vh;
   }
+  .thankYou {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   .company-info {
@@ -777,6 +810,10 @@ label > img {
   .homePage #cover h1 {
     font-size: 3rem;
   }
+  .thankYou {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -785,6 +822,10 @@ label > img {
   }
   .homePage #cover h1 {
     font-size: 2.2rem;
+  }
+  .thankYou {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
   }
 }
 
