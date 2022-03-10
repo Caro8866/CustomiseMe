@@ -626,8 +626,8 @@ footer a {
   background-image: linear-gradient(
     to right,
     var(--accent-color),
-    #2a5dfe,
-    var(--primary-color)
+    var(--primary-color),
+    #2a5dfe
   );
 }
 
@@ -635,8 +635,8 @@ footer a {
   background-image: linear-gradient(
     to right,
     var(--accent-color),
-    #2a5dfe,
-    var(--bg-color)
+    #f99cef,
+    #2a5dfe
   );
 }
 
@@ -644,8 +644,8 @@ footer a {
   background-image: linear-gradient(
     to right,
     var(--accent-color),
-    #2a5dfe,
-    var(--darker-accent)
+    #eb59dc,
+    #2a5dfe
   );
 }
 
