@@ -11,6 +11,7 @@
   --subheading-font: "Quicksand", sans-serif;
   --p-font: "Assistant", sans-serif;
 }
+
 html {
   background-color: var(--bg-color);
 }
@@ -210,6 +211,51 @@ main.homePage {
   margin: 2rem auto;
 }
 
+#circle {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70vh;
+  left: 80vw;
+  margin: auto;
+}
+#circleLogo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-size: cover;
+  border-radius: 50%;
+  z-index: 0;
+}
+#circleText {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+}
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+#circleText span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.4rem;
+  transform-origin: 0 100px;
+  font-family: var(--subheading-font);
+}
+#circleLink:hover {
+  color: white;
+}
 /*
 .homePage #cover::before {
   content: "Customise Me";
@@ -222,7 +268,8 @@ main.homePage {
 }
 */
 
-/* product page */
+/* PRODUCT PAGE
+*/
 
 .productPage .imageBox {
   margin: 1rem;
@@ -1203,5 +1250,27 @@ label > img {
 
   .hidden {
     visibility: none;
+  }
+}
+
+/* INDEX PAGE SPINNY CIRCLE MEDIA QUIERIES */
+@media only screen and (min-width: 500px) {
+  #circle {
+    top: 70vh;
+    left: 80vw;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #circle {
+    top: 70vh;
+    left: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #circle {
+    top: 70vh;
+    left: 83vw;
   }
 }
