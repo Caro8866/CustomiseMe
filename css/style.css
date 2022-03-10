@@ -223,6 +223,7 @@ main.homePage {
   top: 70vh;
   left: 80vw;
   margin: auto;
+  z-index: 100;
 }
 #circleLogo {
   position: absolute;
