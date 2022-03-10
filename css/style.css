@@ -727,3 +727,25 @@ label > img {
 .hidden {
   visibility: none;
 }
+
+/* INDEX PAGE SPINNY CIRCLE MEDIA QUIERIES */
+@media only screen and (min-width: 500px) {
+  #circle {
+    top: 70vh;
+    left: 80vw;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  #circle {
+    top: 70vh;
+    left: 70vw;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #circle {
+    top: 70vh;
+    left: 75vw;
+  }
+}
