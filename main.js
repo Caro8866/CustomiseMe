@@ -1,9 +1,7 @@
-// CREATE CUSTOM SOAP BUTTON JS
-
-const customText = document.querySelector(".customText");
-customText.innerHTML = customText.innerText
+const text = document.querySelector("#circleText a");
+text.innerHTML = text.innerText
   .split("")
   .map(
-    (char, i) => `<span style="transform:rotate(${i * 8.5}deg)">${char}</span>`
+    (char, i) => `<span style="transform:rotate(${i * 9.5}deg)">${char}</span>`
   )
   .join("");
